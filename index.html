@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/komika-axis" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b418e43377.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-column-container">
+        <div class="left-column">
+          <h2>DAILY</h2>
+          <h2>TO DO</h2>
+          <h3 class="priorities">TOP PRIORITIES</h3>
+          <form id="priority-form">
+            <input type="text" placeholder="Add a priority" minlength="3" />
+            <button type="submit">Create Priority</button>
+          </form>
+          <section id="priorities"></section>
+          <h3>TO DO TASKS</h3>
+          <form id="todo-form">
+            <input type="text" placeholder="Add a task" minlength="3" />
+            <button type="submit">Create To-Do</button>
+          </form>
+          <section id="todos"></section>
+        </div>
+      </div>
+      <div class="right-column-container">
+        <div class="right-column">
+          <h3 class="date">DATE</h3>
+          <input type="date" id="date-input" />
+          <h3>MEETINGS</h3>
+          <form id="meeting-form">
+            <input type="text" placeholder="Add a meeting" minlength="3" />
+            <button type="submit">Create Meeting</button>
+          </form>
+          <section id="meetings"></section>
+          <h3>FOR TOMORROW</h3>
+          <form id="tomorrow-form">
+            <input
+              type="text"
+              placeholder="Add a task for tomorrow"
+              minlength="3"
+            />
+            <button type="submit">Create To-Do</button>
+          </form>
+          <section id="tomorrows"></section>
+        </div>
+      </div>
+      <div class="bottom-notes">
+        <h3 id="text-notes">NOTES</h3>
+        <textarea id="notes" placeholder="Add your notes here"></textarea>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

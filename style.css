@@ -1,0 +1,132 @@
+body {
+  background-color: #04c0b1;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.left-column-container {
+  width: calc(50% - 10px); /* Half the width of the notes box */
+  float: left;
+}
+
+.right-column-container {
+  width: calc(50% - 10px); /* Half the width of the notes box */
+  float: right;
+}
+
+.left-column,
+.right-column {
+  background-color: #fac223;
+  padding: 20px;
+  border: 1px solid #fac223;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #fa7500;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.left-column {
+  margin-right: 20px;
+}
+
+h2 {
+  font-family: "Komika Axis", sans-serif;
+  font-size: 50px;
+  color: #d41212;
+  text-align: center;
+  line-height: 1rem;
+}
+
+h3 {
+  font-family: "Komika Axis", sans-serif;
+  color: #056f58;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.priorities {
+  margin-top: 48px;
+}
+
+.date {
+  color: #d41212;
+  margin-top: 28px;
+}
+
+#date-input {
+  border: 1px solid #fa7500;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px #fa7500;
+}
+
+.bottom-notes > h3 {
+  clear: both;
+  color: #fa7500;
+}
+
+#text-notes {
+  color: #d41212;
+  background-color: #fac223;
+  padding: 10px;
+  border: 1px solid #fac223;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #fa7500;
+}
+
+textarea {
+  width: calc(100% - 20px); /* Adjusted for both columns */
+  height: 200px; /* Increased height for better visibility */
+  padding: 10px;
+  border: 1px solid #fa7500;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px #fa7500;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: calc(70% - 20px); /* Adjusted width */
+  padding: 10px;
+  border: 1px solid #04c0b1;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px #04c0b1;
+}
+
+button {
+  width: calc(30% - 20px); /* Adjusted width */
+  padding: 10px;
+  background-color: #fa7500;
+  color: #056f58;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 5px #04c0b1;
+  cursor: pointer;
+}
+
+.task {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #056f58;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 5px 5px 15px 5px #fa7500;
+}
+
+.actions span {
+  margin-right: 10px;
+}
+
+.completed {
+  color: #fa7500;
+  text-decoration: line-through;
+}
+
+.completed .fa-circle-check {
+  color: green;
+}
