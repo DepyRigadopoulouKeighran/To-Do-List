@@ -2,6 +2,8 @@
 
 Welcome to To-Do List, a simple yet powerful task management application.
 
+![The To-Do-List](./DailyToDo.png)
+
 ## Description
 
 To-Do List is a user-friendly web application that enables users to efficiently organize their tasks. With this app, users can:
